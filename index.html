@@ -1,0 +1,652 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Cricket | Expert Cricket Tips & Analysis Since 1996</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        imageYellow: '#ffcc00',
+                        imageGreen: '#073721',
+                        imageDark: '#041f12',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-imageDark text-white font-sans antialiased selection:bg-imageYellow selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-imageDark/95 border-b border-imageYellow/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-imageYellow text-black font-extrabold text-xl w-12 h-12 rounded-full flex items-center justify-center shadow-lg shadow-imageYellow/30">
+                    RC
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-wider uppercase bg-gradient-to-r from-white via-yellow-200 to-imageYellow bg-clip-text text-transparent">Raj Cricket</span>
+                    <span class="block text-xs text-imageYellow font-semibold tracking-widest uppercase">Est. 1996</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+                <span class="hidden md:flex items-center text-sm bg-imageGreen text-imageYellow border border-imageYellow/30 px-3.5 py-1.5 rounded-full font-medium shadow-sm">
+                    <span class="w-2.5 h-2.5 bg-imageYellow rounded-full animate-pulse mr-2"></span> 15k+ Active Members
+                </span>
+                <a id="navTelegramBtn" href="#" target="_blank" class="hidden sm:flex bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-xl font-bold text-sm transition-all shadow-lg items-center gap-2">
+                    <i class="fa-brands fa-telegram text-lg"></i> Telegram
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Video Section -->
+    <div id="topVideoContainer" class="w-full bg-black py-6 border-b border-imageYellow/30 hidden">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="rounded-2xl overflow-hidden border-2 border-imageYellow shadow-2xl aspect-video bg-black">
+                <iframe id="topVideoFrame" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section (Yellow-Green Image Theme Split) -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-imageYellow via-imageGreen to-imageDark text-black lg:text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-black/80 border border-imageYellow px-4 py-2 rounded-full text-imageYellow text-sm font-bold tracking-wide shadow-lg">
+                        <i class="fa-solid fa-trophy"></i> India's #1 Most Trusted Analysis Since 1996
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-black lg:text-white">
+                        Master Every Match With <span class="text-imageYellow drop-shadow-md">Expert Cricket Predictions</span>
+                    </h1>
+                    
+                    <p class="text-gray-900 lg:text-gray-200 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-medium">
+                        Get 95% accurate match analysis, session reports, and jackpot tips from veteran analysts with over <strong class="text-black lg:text-white">28+ years of experience</strong>.
+                    </p>
+
+                    <!-- Trust Stats Banner -->
+                    <div class="grid grid-cols-3 gap-4 py-4 border-y border-black/20 lg:border-white/20 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-black lg:text-imageYellow">1996</div>
+                            <div class="text-xs text-gray-800 lg:text-gray-400 uppercase tracking-wider font-bold">Established</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-black lg:text-white">15K+</div>
+                            <div class="text-xs text-gray-800 lg:text-gray-400 uppercase tracking-wider font-bold">Active VIPs</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-black lg:text-imageYellow">95%</div>
+                            <div class="text-xs text-gray-800 lg:text-gray-400 uppercase tracking-wider font-bold">Accuracy</div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a id="heroTelegramBtn" href="#" target="_blank" class="w-full sm:w-auto bg-sky-500 hover:bg-sky-600 text-white font-bold text-base px-7 py-3.5 rounded-2xl transition-all shadow-xl flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-telegram text-2xl"></i> Join Telegram Channel
+                        </a>
+                        <a id="heroWhatsappBtn" href="#" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-7 py-3.5 rounded-2xl transition-all shadow-xl flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative max-w-md mx-auto lg:max-w-none">
+                        <div class="relative bg-black/90 border-2 border-imageYellow p-6 sm:p-8 rounded-3xl backdrop-blur-xl shadow-2xl space-y-6 text-white">
+                            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                                <span class="text-imageYellow font-bold uppercase tracking-wider text-sm"><i class="fa-solid fa-bolt"></i> Legend Level Analysis</span>
+                                <span class="bg-imageYellow text-black text-xs px-2.5 py-1 rounded-full font-black">VIP ACCESS</span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-3 text-center">
+                                <div class="bg-white/5 p-3 rounded-2xl border border-white/10 flex flex-col items-center">
+                                    <div class="w-12 h-12 rounded-full bg-imageYellow text-black flex items-center justify-center mb-2 shadow-md font-bold">
+                                        <i class="fa-solid fa-crown"></i>
+                                    </div>
+                                    <span class="font-bold text-xs">Virat Class</span>
+                                </div>
+                                <div class="bg-white/5 p-3 rounded-2xl border border-white/10 flex flex-col items-center">
+                                    <div class="w-12 h-12 rounded-full bg-imageYellow text-black flex items-center justify-center mb-2 shadow-md font-bold">
+                                        <i class="fa-solid fa-chess-knight"></i>
+                                    </div>
+                                    <span class="font-bold text-xs">Dhoni Mind</span>
+                                </div>
+                                <div class="bg-white/5 p-3 rounded-2xl border border-white/10 flex flex-col items-center">
+                                    <div class="w-12 h-12 rounded-full bg-imageYellow text-black flex items-center justify-center mb-2 shadow-md font-bold">
+                                        <i class="fa-solid fa-fire"></i>
+                                    </div>
+                                    <span class="font-bold text-xs">Hardik Power</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-imageGreen border border-imageYellow/40 rounded-2xl p-4 text-center">
+                                <p class="text-sm font-semibold text-imageYellow">✨ Trusted by 15,000+ Active Members since 1996.</p>
+                            </div>
+
+                            <a href="#payment-section" class="w-full block text-center bg-imageYellow hover:bg-yellow-400 text-black font-extrabold py-3.5 rounded-xl transition-all uppercase tracking-wide text-sm shadow-lg shadow-imageYellow/20">
+                                Pay via UPI & Join VIP <i class="fa-solid fa-arrow-down ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Black Divider Bar -->
+    <div class="w-full bg-black h-3 border-y border-imageYellow/30"></div>
+
+    <!-- Dynamic Images Gallery Section (3 Images) -->
+    <section id="imagesSection" class="py-16 bg-imageDark border-b border-white/10 hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-black text-imageYellow uppercase tracking-wider">Match Highlights & Gallery</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div id="imgCard1" class="rounded-2xl overflow-hidden border-2 border-imageYellow/40 shadow-2xl hidden bg-black">
+                    <img id="displayImg1" src="" alt="Gallery Image 1" class="w-full h-64 object-cover">
+                </div>
+                <div id="imgCard2" class="rounded-2xl overflow-hidden border-2 border-imageYellow/40 shadow-2xl hidden bg-black">
+                    <img id="displayImg2" src="" alt="Gallery Image 2" class="w-full h-64 object-cover">
+                </div>
+                <div id="imgCard3" class="rounded-2xl overflow-hidden border-2 border-imageYellow/40 shadow-2xl hidden bg-black">
+                    <img id="displayImg3" src="" alt="Gallery Image 3" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPI & QR Code Payment Gateway Section -->
+    <section id="payment-section" class="py-16 bg-imageGreen border-y border-imageYellow/30 scroll-mt-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="bg-black/60 text-imageYellow text-xs font-extrabold px-3.5 py-1.5 rounded-full uppercase tracking-wider border border-imageYellow/40">Instant VIP Upgrade</span>
+                <h2 class="text-3xl sm:text-4xl font-black mt-3 mb-2 text-white">Pay Directly via UPI App or QR Code</h2>
+                <p class="text-gray-200 text-sm">Enter your amount, scan QR or click your payment app, and share screenshot on WhatsApp.</p>
+            </div>
+
+            <div class="bg-black/80 border-2 border-imageYellow/50 rounded-3xl p-6 sm:p-8 backdrop-blur-xl shadow-2xl space-y-8">
+                
+                <!-- QR Code Display Box -->
+                <div id="qrCodeContainer" class="flex flex-col items-center justify-center bg-black/60 p-6 rounded-2xl border border-imageYellow/30 hidden">
+                    <span class="text-xs text-imageYellow uppercase tracking-wider font-bold mb-3">Scan QR Code to Pay</span>
+                    <img id="displayQrImg" src="" alt="Payment QR Code" class="w-48 h-48 sm:w-56 sm:h-56 object-contain rounded-xl border-2 border-imageYellow bg-white p-2 shadow-lg">
+                </div>
+
+                <!-- Default UPI ID Display -->
+                <div class="bg-black/60 border border-white/15 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs text-gray-400 uppercase tracking-wider block font-medium">Default UPI ID</span>
+                        <span id="upiIdText" class="text-xl sm:text-2xl font-mono font-bold text-imageYellow">Not Set (Update via Admin)</span>
+                    </div>
+                    <button onclick="copyUpi()" class="bg-white/10 hover:bg-white/20 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2 border border-white/15 cursor-pointer">
+                        <i class="fa-regular fa-copy"></i> <span id="copyBtnText">Copy UPI ID</span>
+                    </button>
+                </div>
+
+                <!-- Custom Amount Input Only -->
+                <div class="space-y-3">
+                    <label class="block text-sm font-bold text-imageYellow uppercase tracking-wide">Enter Membership Amount (₹)</label>
+                    <div class="flex items-center gap-3">
+                        <span class="text-xl font-bold text-imageYellow">₹</span>
+                        <input type="number" id="customAmountInput" value="1999" oninput="updateCustomAmount(this.value)" placeholder="Enter amount" class="bg-black/80 border-2 border-imageYellow/60 rounded-xl px-4 py-3 text-white font-black text-xl w-full focus:outline-none focus:border-imageYellow">
+                    </div>
+                </div>
+
+                <!-- Choose Payment App -->
+                <div class="space-y-3">
+                    <label class="block text-sm font-bold text-gray-200 uppercase tracking-wide">Tap Your Preferred Payment App</label>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <a id="phonepeLink" href="#" target="_blank" class="bg-[#5f259f]/90 hover:bg-[#5f259f] border border-purple-400/30 p-4 rounded-2xl flex items-center justify-center gap-3 transition-all shadow-lg transform hover:-translate-y-0.5">
+                            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-[#5f259f] text-lg">P</div>
+                            <div class="text-left">
+                                <div class="font-bold text-sm">PhonePe</div>
+                                <div class="text-[10px] text-purple-200">Direct App Pay</div>
+                            </div>
+                        </a>
+
+                        <a id="gpayLink" href="#" target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/20 p-4 rounded-2xl flex items-center justify-center gap-3 transition-all shadow-lg transform hover:-translate-y-0.5">
+                            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center font-black text-black text-lg">G</div>
+                            <div class="text-left">
+                                <div class="font-bold text-sm">Google Pay</div>
+                                <div class="text-[10px] text-gray-300">Direct App Pay</div>
+                            </div>
+                        </a>
+
+                        <a id="paytmLink" href="#" target="_blank" class="bg-[#00b9f1]/90 hover:bg-[#00b9f1] border border-sky-400/30 p-4 rounded-2xl flex items-center justify-center gap-3 transition-all shadow-lg text-black transform hover:-translate-y-0.5">
+                            <div class="w-10 h-10 rounded-full bg-black text-[#00b9f1] flex items-center justify-center font-black text-lg">Pt</div>
+                            <div class="text-left">
+                                <div class="font-bold text-sm text-white">Paytm</div>
+                                <div class="text-[10px] text-sky-100">Direct App Pay</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Confirm on WhatsApp -->
+                <div class="bg-emerald-950/80 border border-emerald-500/50 rounded-2xl p-5 text-center space-y-3">
+                    <h3 class="font-bold text-emerald-400 text-base"><i class="fa-brands fa-whatsapp text-lg mr-1"></i> Send Screenshot on WhatsApp</h3>
+                    <p class="text-xs text-gray-200 max-w-md mx-auto">After making the payment, click below to send your payment screenshot directly to our WhatsApp support number.</p>
+                    
+                    <a id="whatsappConfirmBtn" href="#" target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold px-8 py-3.5 rounded-xl transition-all shadow-lg text-sm">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Send Payment Proof on WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-imageDark border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl font-black mb-4 text-imageYellow">Why Raj Cricket is #1 Choice</h2>
+                <p class="text-gray-300">Decades of market wisdom paired with deep statistical evaluation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-black/50 border border-imageYellow/30 p-8 rounded-3xl hover:border-imageYellow transition-all group">
+                    <div class="w-14 h-14 bg-imageYellow/10 text-imageYellow rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-imageYellow group-hover:text-black transition-all">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">28+ Years Legacy</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Providing accurate match analysis and predictions since 1996 with an unbeatable track record.</p>
+                </div>
+
+                <div class="bg-black/50 border border-imageYellow/30 p-8 rounded-3xl hover:border-imageYellow transition-all group">
+                    <div class="w-14 h-14 bg-imageYellow/10 text-imageYellow rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-imageYellow group-hover:text-black transition-all">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Live Session & Jackpot Calls</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Instant real-time updates, session reports, and big match turnarounds delivered straight to your phone.</p>
+                </div>
+
+                <div class="bg-black/50 border border-imageYellow/30 p-8 rounded-3xl hover:border-imageYellow transition-all group">
+                    <div class="w-14 h-14 bg-imageYellow/10 text-imageYellow rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-imageYellow group-hover:text-black transition-all">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">15K+ Active VIP Family</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Join thousands of passionate cricket lovers who trust our daily predictions and expert match breakdowns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Video Section -->
+    <div id="bottomVideoContainer" class="w-full bg-black py-6 border-t border-imageYellow/30 hidden">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="rounded-2xl overflow-hidden border-2 border-imageYellow shadow-2xl aspect-video bg-black">
+                <iframe id="bottomVideoFrame" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a id="floatingWhatsappBtn" href="#" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Footer with Discreet Hidden Admin Access -->
+    <footer class="bg-black py-8 border-t border-imageYellow/30 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p class="font-bold text-gray-400 uppercase tracking-widest">Raj Cricket Analysis &copy; 1996 - 2026. All Rights Reserved.</p>
+            <p class="max-w-2xl mx-auto text-[11px] leading-normal text-gray-600">
+                Disclaimer: This website is purely for entertainment, cricket analysis, and information purposes. We do not promote illegal betting or gambling.
+            </p>
+            <div class="pt-2">
+                <!-- DISCREET ADMIN ACCESS BUTTON -->
+                <button onclick="openAdminModal()" class="text-gray-600 hover:text-imageYellow transition-colors text-[10px] bg-transparent border-0 cursor-pointer">
+                    <i class="fa-solid fa-lock"></i> Management Portal
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" style="display: none;" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-imageDark border border-imageYellow/60 p-6 rounded-3xl w-full max-w-sm space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center">
+                <h3 class="font-black text-lg text-imageYellow">Admin Login</h3>
+                <button onclick="closeAdminModal()" class="text-gray-400 hover:text-white cursor-pointer"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <p class="text-xs text-gray-400">Enter admin password to access settings</p>
+            <input type="password" id="adminPinInput" placeholder="Enter Password" class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2.5 text-white font-bold focus:outline-none focus:border-imageYellow">
+            <button onclick="verifyAdminPin()" class="w-full bg-imageYellow text-black font-extrabold py-2.5 rounded-xl uppercase tracking-wider text-sm shadow-md cursor-pointer">Login</button>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard Settings Modal -->
+    <div id="adminDashboardModal" style="display: none;" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-imageDark border border-imageYellow/80 p-6 sm:p-8 rounded-3xl w-full max-w-xl space-y-4 shadow-2xl max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center border-b border-white/10 pb-4">
+                <div>
+                    <h3 class="font-black text-xl text-imageYellow">Raj Cricket Admin Dashboard</h3>
+                    <span class="text-xs text-green-400">Cloud Database Connected</span>
+                </div>
+                <button onclick="closeDashboard()" class="text-gray-400 hover:text-white cursor-pointer"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+
+            <div class="space-y-3.5">
+                <!-- DEFAULT UPI ID FIELD ADDED -->
+                <div>
+                    <label class="block text-xs font-bold text-imageYellow uppercase mb-1">Default UPI ID (Main Display & Copy)</label>
+                    <input type="text" id="settingDefaultUpi" placeholder="e.g. rajcricket@paytm" class="w-full bg-black/50 border-2 border-imageYellow/60 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">PhonePe UPI ID</label>
+                    <input type="text" id="settingPhonepeUpi" placeholder="e.g. yourname@paytm" class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Google Pay (GPay) UPI ID</label>
+                    <input type="text" id="settingGpayUpi" placeholder="e.g. yourname@oksbi" class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Paytm UPI ID</label>
+                    <input type="text" id="settingPaytmUpi" placeholder="e.g. yourname@paytm" class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-imageYellow uppercase mb-1">QR Code Image URL</label>
+                    <input type="text" id="settingQrCodeUrl" placeholder="https://... (Direct image link for QR)" class="w-full bg-black/50 border border-imageYellow/40 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div class="pt-2 border-t border-white/10">
+                    <label class="block text-xs font-bold text-imageYellow uppercase mb-1">Top Video URL (YouTube Embed Link)</label>
+                    <input type="text" id="settingTopVideo" placeholder="https://www.youtube.com/embed/..." class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-imageYellow uppercase mb-1">Bottom Video URL (YouTube Embed Link)</label>
+                    <input type="text" id="settingBottomVideo" placeholder="https://www.youtube.com/embed/..." class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div class="pt-2 border-t border-white/10">
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Gallery Image 1 URL</label>
+                    <input type="text" id="settingImg1" placeholder="https://..." class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Gallery Image 2 URL</label>
+                    <input type="text" id="settingImg2" placeholder="https://..." class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Gallery Image 3 URL</label>
+                    <input type="text" id="settingImg3" placeholder="https://..." class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div class="pt-2 border-t border-white/10">
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">WhatsApp Phone Number</label>
+                    <input type="text" id="settingWaNumber" placeholder="91xxxxxxxxxx" class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">WhatsApp Message Text</label>
+                    <textarea id="settingWaMessage" rows="2" placeholder="Hi Raj Cricket, I have made payment..." class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white text-xs focus:outline-none focus:border-imageYellow"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-300 uppercase mb-1">Telegram Link</label>
+                    <input type="text" id="settingTelegram" placeholder="https://t.me/..." class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-2 text-white font-mono text-sm focus:outline-none focus:border-imageYellow">
+                </div>
+            </div>
+
+            <div class="flex gap-3 pt-2">
+                <button onclick="saveSettings()" id="saveBtn" class="flex-1 bg-imageYellow text-black font-extrabold py-3 rounded-xl uppercase tracking-wider text-sm shadow-lg hover:bg-yellow-400 transition-all cursor-pointer">Save & Update Global</button>
+                <button onclick="closeDashboard()" class="bg-white/10 text-white px-4 py-3 rounded-xl font-bold text-sm cursor-pointer">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Integration -->
+    <script>
+        const API_URL = "https://script.google.com/macros/s/AKfycbyjugMo0XjgIN6a8JgYLVw0SNagW75W5mOiTnCpZ0UCSASX38UJbCrL94G-ntNm1I-tHQ/exec";
+
+        let currentConfig = {
+            defaultUpi: "",
+            phonepeUpi: "",
+            gpayUpi: "",
+            paytmUpi: "",
+            qrCodeUrl: "",
+            topVideoUrl: "",
+            bottomVideoUrl: "",
+            img1Url: "",
+            img2Url: "",
+            img3Url: "",
+            waNumber: "",
+            waMessage: "Hi Raj Cricket, I have made the payment. Please add me to the VIP group",
+            telegramLink: ""
+        };
+
+        let currentAmount = 1999;
+
+        async function loadConfig() {
+            try {
+                let response = await fetch(API_URL);
+                let data = await response.json();
+                if(data && Object.keys(data).length > 0) {
+                    currentConfig = Object.assign(currentConfig, data);
+                }
+            } catch(e) {
+                console.log("Using default config");
+            }
+            applyConfig();
+        }
+
+        function applyConfig() {
+            const mainUpi = currentConfig.defaultUpi || currentConfig.phonepeUpi || "Not Set";
+            document.getElementById('upiIdText').innerText = mainUpi;
+
+            // QR Code render
+            const qrContainer = document.getElementById('qrCodeContainer');
+            const qrImg = document.getElementById('displayQrImg');
+            if(currentConfig.qrCodeUrl) {
+                qrImg.src = currentConfig.qrCodeUrl;
+                qrContainer.classList.remove('hidden');
+            } else {
+                qrContainer.classList.add('hidden');
+            }
+
+            // Top Video render
+            const topVideoContainer = document.getElementById('topVideoContainer');
+            const topVideoFrame = document.getElementById('topVideoFrame');
+            if(currentConfig.topVideoUrl) {
+                topVideoFrame.src = currentConfig.topVideoUrl;
+                topVideoContainer.classList.remove('hidden');
+            } else {
+                topVideoContainer.classList.add('hidden');
+            }
+
+            // Bottom Video render
+            const bottomVideoContainer = document.getElementById('bottomVideoContainer');
+            const bottomVideoFrame = document.getElementById('bottomVideoFrame');
+            if(currentConfig.bottomVideoUrl) {
+                bottomVideoFrame.src = currentConfig.bottomVideoUrl;
+                bottomVideoContainer.classList.remove('hidden');
+            } else {
+                bottomVideoContainer.classList.add('hidden');
+            }
+
+            // 3 Images render
+            let hasImages = false;
+            const imgSection = document.getElementById('imagesSection');
+            
+            for(let i=1; i<=3; i++) {
+                const card = document.getElementById(`imgCard${i}`);
+                const imgTag = document.getElementById(`displayImg${i}`);
+                const url = currentConfig[`img${i}Url`];
+                if(url) {
+                    imgTag.src = url;
+                    card.classList.remove('hidden');
+                    hasImages = true;
+                } else {
+                    card.classList.add('hidden');
+                }
+            }
+            if(hasImages) {
+                imgSection.classList.remove('hidden');
+            } else {
+                imgSection.classList.add('hidden');
+            }
+
+            const tgLinks = [
+                document.getElementById('navTelegramBtn'),
+                document.getElementById('heroTelegramBtn')
+            ];
+            tgLinks.forEach(el => { if(el) el.href = currentConfig.telegramLink || "#"; });
+
+            const encodedMsg = encodeURIComponent(currentConfig.waMessage || "");
+            const waFullUrl = currentConfig.waNumber ? `https://wa.me/${currentConfig.waNumber}?text=${encodedMsg}` : "#";
+            
+            const waLinks = [
+                document.getElementById('heroWhatsappBtn'),
+                document.getElementById('floatingWhatsappBtn'),
+                document.getElementById('whatsappConfirmBtn')
+            ];
+            waLinks.forEach(el => { if(el) el.href = waFullUrl; });
+
+            updatePaymentLinks(currentAmount);
+        }
+
+        function updatePaymentLinks(amount) {
+            currentAmount = amount || 0;
+            const payeeName = "Raj Cricket";
+            const mainUpi = currentConfig.defaultUpi || currentConfig.phonepeUpi || "";
+
+            const phonepeUrl = currentConfig.phonepeUpi ? `upi://pay?pa=${currentConfig.phonepeUpi}&pn=${encodeURIComponent(payeeName)}&am=${amount}&cu=INR` : (mainUpi ? `upi://pay?pa=${mainUpi}&pn=${encodeURIComponent(payeeName)}&am=${amount}&cu=INR` : "#");
+            const gpayUrl = currentConfig.gpayUpi ? `upi://pay?pa=${currentConfig.gpayUpi}&pn=${encodeURIComponent(payeeName)}&am=${amount}&cu=INR` : "#";
+            const paytmUrl = currentConfig.paytmUpi ? `upi://pay?pa=${currentConfig.paytmUpi}&pn=${encodeURIComponent(payeeName)}&am=${amount}&cu=INR` : "#";
+            
+            document.getElementById('phonepeLink').href = phonepeUrl;
+            document.getElementById('gpayLink').href = gpayUrl;
+            document.getElementById('paytmLink').href = paytmUrl;
+
+            const payWaMsg = encodeURIComponent(`Hi Raj Cricket, I have paid ₹${amount} via UPI. Here is my payment screenshot. Please add me to VIP!`);
+            const confirmWaBtn = document.getElementById('whatsappConfirmBtn');
+            if(currentConfig.waNumber) {
+                confirmWaBtn.href = `https://wa.me/${currentConfig.waNumber}?text=${payWaMsg}`;
+            } else {
+                confirmWaBtn.href = "#";
+            }
+        }
+
+        function updateCustomAmount(val) {
+            const amt = val ? val : 0;
+            updatePaymentLinks(amt);
+        }
+
+        function copyUpi() {
+            const mainUpi = currentConfig.defaultUpi || currentConfig.phonepeUpi;
+            if(!mainUpi) {
+                alert("Default UPI ID is not set yet! Please set it from Admin Panel.");
+                return;
+            }
+            navigator.clipboard.writeText(mainUpi);
+            const btnText = document.getElementById('copyBtnText');
+            btnText.innerText = "Copied!";
+            setTimeout(() => { btnText.innerText = "Copy UPI ID"; }, 2000);
+        }
+
+        function openAdminModal() {
+            document.getElementById('adminLoginModal').style.display = 'flex';
+        }
+        function closeAdminModal() {
+            document.getElementById('adminLoginModal').style.display = 'none';
+            document.getElementById('adminPinInput').value = '';
+        }
+        function verifyAdminPin() {
+            const pin = document.getElementById('adminPinInput').value;
+            if(pin === "harsh@9406") {
+                closeAdminModal();
+                loadAdminForm();
+                document.getElementById('adminDashboardModal').style.display = 'flex';
+            } else {
+                alert("Incorrect Password!");
+            }
+        }
+        function closeDashboard() {
+            document.getElementById('adminDashboardModal').style.display = 'none';
+        }
+
+        function loadAdminForm() {
+            document.getElementById('settingDefaultUpi').value = currentConfig.defaultUpi || "";
+            document.getElementById('settingPhonepeUpi').value = currentConfig.phonepeUpi || "";
+            document.getElementById('settingGpayUpi').value = currentConfig.gpayUpi || "";
+            document.getElementById('settingPaytmUpi').value = currentConfig.paytmUpi || "";
+            document.getElementById('settingQrCodeUrl').value = currentConfig.qrCodeUrl || "";
+            document.getElementById('settingTopVideo').value = currentConfig.topVideoUrl || "";
+            document.getElementById('settingBottomVideo').value = currentConfig.bottomVideoUrl || "";
+            document.getElementById('settingImg1').value = currentConfig.img1Url || "";
+            document.getElementById('settingImg2').value = currentConfig.img2Url || "";
+            document.getElementById('settingImg3').value = currentConfig.img3Url || "";
+            document.getElementById('settingWaNumber').value = currentConfig.waNumber || "";
+            document.getElementById('settingWaMessage').value = currentConfig.waMessage || "";
+            document.getElementById('settingTelegram').value = currentConfig.telegramLink || "";
+        }
+
+        async function saveSettings() {
+            const saveBtn = document.getElementById('saveBtn');
+            saveBtn.innerText = "Saving globally...";
+            
+            const defUpi = document.getElementById('settingDefaultUpi').value;
+            const pUpi = document.getElementById('settingPhonepeUpi').value;
+            const gUpi = document.getElementById('settingGpayUpi').value;
+            const pyUpi = document.getElementById('settingPaytmUpi').value;
+            const qr = document.getElementById('settingQrCodeUrl').value;
+            const tVid = document.getElementById('settingTopVideo').value;
+            const bVid = document.getElementById('settingBottomVideo').value;
+            const img1 = document.getElementById('settingImg1').value;
+            const img2 = document.getElementById('settingImg2').value;
+            const img3 = document.getElementById('settingImg3').value;
+            const waNum = document.getElementById('settingWaNumber').value;
+            const waMsg = document.getElementById('settingWaMessage').value;
+            const tg = document.getElementById('settingTelegram').value;
+
+            const saveUrl = `${API_URL}?action=save&pin=harsh@9406&defaultUpi=${encodeURIComponent(defUpi)}&phonepeUpi=${encodeURIComponent(pUpi)}&gpayUpi=${encodeURIComponent(gUpi)}&paytmUpi=${encodeURIComponent(pyUpi)}&qrCodeUrl=${encodeURIComponent(qr)}&topVideoUrl=${encodeURIComponent(tVid)}&bottomVideoUrl=${encodeURIComponent(bVid)}&img1Url=${encodeURIComponent(img1)}&img2Url=${encodeURIComponent(img2)}&img3Url=${encodeURIComponent(img3)}&waNumber=${encodeURIComponent(waNum)}&waMessage=${encodeURIComponent(waMsg)}&telegramLink=${encodeURIComponent(tg)}`;
+
+            try {
+                let response = await fetch(saveUrl);
+                let result = await response.json();
+                
+                if(result.status === "success") {
+                    currentConfig = {
+                        defaultUpi: defUpi, phonepeUpi: pUpi, gpayUpi: gUpi, paytmUpi: pyUpi, qrCodeUrl: qr,
+                        topVideoUrl: tVid, bottomVideoUrl: bVid, img1Url: img1, img2Url: img2, img3Url: img3,
+                        waNumber: waNum, waMessage: waMsg, telegramLink: tg
+                    };
+                    applyConfig();
+                    closeDashboard();
+                    alert("Settings updated successfully for everyone globally! 🚀");
+                } else {
+                    alert("Error saving: " + result.message);
+                }
+            } catch(e) {
+                alert("Network error while saving!");
+            }
+            saveBtn.innerText = "Save & Update Global";
+        }
+
+        loadConfig();
+    </script>
+</body>
+</html>
